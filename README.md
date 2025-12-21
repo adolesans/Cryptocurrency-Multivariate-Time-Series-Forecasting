@@ -14,7 +14,7 @@ Tantangan utama dalam proyek ini adalah melakukan **Multi-Step Forecasting** (me
 * **Fitur:** `Close` (Target), `Volume`, `RSI`, `MACD`, `Rolling Mean`, `Rolling Std`.
 * **Windowing:** Input masa lalu 24 jam (`INPUT_WIDTH=24`) untuk memprediksi 24 jam ke depan (`OUT_STEPS=24`).
 
-## 🛠️ Technical Implementation (Advanced)
+## 🛠️ Technical Implementation 
 Proyek ini menggunakan teknik *Deep Learning* tingkat lanjut sesuai kriteria kelulusan:
 
 ### 1. Model Architecture: Seq2Seq LSTM
@@ -34,8 +34,8 @@ Alih-alih menggunakan fungsi standar Keras, pelatihan dilakukan secara manual:
 
 ## 📊 Results & Analysis
 Berdasarkan evaluasi pada data uji (Test Set):
-* **Baseline Model (Vanilla LSTM):** Cenderung menghasilkan prediksi yang kasar (*noisy*) dan kurang akurat dalam jangka panjang.
-* **Seq2Seq Model (Advanced):** Menghasilkan kurva prediksi yang lebih halus (*smooth*) dan mampu mempertahankan struktur tren global dengan lebih baik, meskipun terdapat tantangan *compounding error* pada langkah waktu akhir.
+* **Baseline Model LSTM:** Cenderung menghasilkan prediksi yang kasar (*noisy*) dan kurang akurat dalam jangka panjang.
+* **Seq2Seq Model:** Menghasilkan kurva prediksi yang lebih halus (*smooth*) dan mampu mempertahankan struktur tren global dengan lebih baik, meskipun terdapat tantangan *compounding error* pada langkah waktu akhir.
 
 **Kesimpulan:** Model Seq2Seq dengan Custom Training terbukti lebih *robust* untuk menangani kompleksitas data *time series* Bitcoin dibandingkan pendekatan standar.
 
