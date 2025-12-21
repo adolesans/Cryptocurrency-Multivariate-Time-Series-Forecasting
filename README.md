@@ -1,5 +1,5 @@
 # 📈 Bitcoin Price Forecasting: Multi-Step Time Series with Seq2Seq LSTM
-Proyek ini merupakan submisi akhir untuk kelas **Membangun Proyek Deep Learning Tingkat Mahir**. Setelah mempelajari fundamental TensorFlow, kustomisasi arsitektur, hingga pelatihan model tanpa fungsi *built-in*, proyek ini bertujuan untuk mendemonstrasikan kemampuan tersebut dalam kasus nyata yang kompleks.
+Proyek ini merupakan submisi akhir Dicoding untuk kelas **Membangun Proyek Deep Learning Tingkat Mahir**. Setelah mempelajari fundamental TensorFlow, kustomisasi arsitektur, hingga pelatihan model tanpa fungsi *built-in*, proyek ini bertujuan untuk mendemonstrasikan kemampuan tersebut dalam kasus nyata yang kompleks.
 
 Tantangan utama dalam proyek ini adalah melakukan **Multi-Step Forecasting** (memprediksi 24 jam ke depan sekaligus) pada data harga Bitcoin yang memiliki volatilitas tinggi. Metode standar seringkali kurang memadai untuk menangkap dinamika jangka panjang, sehingga diperlukan pendekatan arsitektur yang lebih canggih.
 
@@ -51,8 +51,8 @@ Berdasarkan evaluasi pada data uji (Test Set):
 ## 📂 Project Structure
 ```text
 DLTM_Annisa-Dewiyanti/
-├── Annisa_Dewiyanti_Submission_Akhir_DLTM.ipynb  # Notebook Utama (Code)
-├── model_baseline_LSTM.keras                     # Model Pembanding
-├── model_seq2seq_LSTM.keras                      # Model Utama (Advanced)
-├── requirements.txt                              # Dependencies
-└── README.md                                     # Dokumentasi Proyek
+├── Annisa_Dewiyanti_Submission_Akhir_DLTM.ipynb  
+├── model_baseline_LSTM.keras                     
+├── model_seq2seq_LSTM.keras                      
+├── requirements.txt                              
+└── README.md                                     
