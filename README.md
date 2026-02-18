@@ -44,7 +44,10 @@ The models were evaluated using **Mean Absolute Error (MAE)** to measure the ave
 | **Baseline LSTM** | **0.0100** |
 | **Seq2Seq LSTM** | **0.0287** |
 
-> *The Seq2Seq architecture demonstrated superior performance in capturing sudden market shifts compared to the baseline.*
+### Key Insight: Why did the simpler model win?
+Interestingly, the **Baseline LSTM outperformed the complex Seq2Seq architecture** (0.0100 vs 0.0287). This finding highlights a critical principle in quantitative modeling:
+
+> *"Complexity does not always equal accuracy. For short-term volatility in this specific dataset, the simpler LSTM architecture generalized better, whereas the Seq2Seq model—despite its theoretical power—likely suffered from overfitting due to the noise inherent in cryptocurrency markets."*
 
 ## 🛠️ Tech Stack
 * **Core**: Python 3.x
