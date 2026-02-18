@@ -1,4 +1,4 @@
-# 📈 Deep Seq2Seq Crypto Forecasting
+# Deep Seq2Seq Crypto Forecasting
 
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
@@ -6,12 +6,12 @@
 
 > **A comparative study of deep learning architectures for high-volatility financial time-series forecasting.**
 
-## 📌 Project Overview
+## Project Overview
 **Deep Seq2Seq Crypto Forecasting** is an advanced Deep Learning project designed to predict Bitcoin (BTC-USD) price movements. Unlike standard regression models, this project tackles the complexity of financial markets by treating the problem as a **Multivariate Time-Series** task.
 
 The core of this project is the implementation of a **Seq2Seq (Sequence-to-Sequence) LSTM Encoder-Decoder** architecture, allowing the model to learn complex temporal dependencies from multiple input features (Open, High, Low, Close, Volume) to generate accurate multi-step forecasts.
 
-## 🚀 Key Features
+## Key Features
 * **Multivariate Analysis**: Ingests multiple data points (OHLCV) simultaneously to capture market sentiment and volatility better than univariate models.
 * **Seq2Seq Architecture**: Implements an Encoder-Decoder structure where:
     * **Encoder**: Compresses the input time series into a fixed-length context vector.
@@ -19,7 +19,7 @@ The core of this project is the implementation of a **Seq2Seq (Sequence-to-Seque
 * **Data Pipeline**: Robust preprocessing using `MinMaxScaler` and sliding window techniques to normalize highly volatile crypto data.
 * **Model Comparison**: Benchmarks a standard LSTM baseline against the advanced Seq2Seq model to demonstrate architectural superiority.
 
-## 📊 Technical Architecture
+## Technical Architecture
 
 ### 1. The Challenge
 Financial time series data is non-stationary, noisy, and chaotic. Standard linear models often fail to capture the non-linear relationships in crypto markets.
@@ -36,7 +36,7 @@ This project leverages Long Short-Term Memory (LSTM) networks to handle the "van
   <p><em>Figure 1: Model performance visualizing Predicted Prices (Orange) vs Actual Market Prices (Blue).</em></p>
 </div>
 
-## 📈 Performance Metrics
+## Performance Metrics
 The models were evaluated using **Mean Absolute Error (MAE)** to measure the average magnitude of errors in a set of predictions, without considering their direction.
 
 | Model Architecture | MAE Score (Validation) |
@@ -49,13 +49,13 @@ Interestingly, the **Baseline LSTM outperformed the complex Seq2Seq architecture
 
 > *"Complexity does not always equal accuracy. For short-term volatility in this specific dataset, the simpler LSTM architecture generalized better, whereas the Seq2Seq model—despite its theoretical power—likely suffered from overfitting due to the noise inherent in cryptocurrency markets."*
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Core**: Python 3.x
 * **Deep Learning**: TensorFlow / Keras
 * **Data Processing**: Pandas, NumPy, Scikit-Learn
 * **Visualization**: Matplotlib, Seaborn
 
-## 💻 Usage
+## Usage
 1.  **Clone the Repository**
     ```bash
     git clone [https://github.com/adolesans/Cryptocurrency-Multivariate-Time-Series-Forecasting.git](https://github.com/adolesans/Cryptocurrency-Multivariate-Time-Series-Forecasting.git)
@@ -66,9 +66,5 @@ Interestingly, the **Baseline LSTM outperformed the complex Seq2Seq architecture
     ```
 3.  **Run the Notebook**
     Open `Model_Training_Seq2Seq.ipynb` in Jupyter or Google Colab to retrain the models or view the analysis.
-
-## 📜 License
-Distributed under the MIT License.
-
 ---
 *Developed by [Annisa D.Y.](https://www.linkedin.com/in/annisa-dewiyanti/)*
