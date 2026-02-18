@@ -32,7 +32,7 @@ This project leverages Long Short-Term Memory (LSTM) networks to handle the "van
 * **Output**: Predicted closing price for the next time step.
 
 <div align="center">
-  <img src="prediction_graph.png" alt="Prediction Result" width="800">
+  <img src="prediction_graph.jpeg" alt="Prediction Result" width="800">
   <p><em>Figure 1: Model performance visualizing Predicted Prices (Orange) vs Actual Market Prices (Blue).</em></p>
 </div>
 
@@ -41,8 +41,8 @@ The models were evaluated using **Mean Absolute Error (MAE)** to measure the ave
 
 | Model Architecture | MAE Score (Validation) |
 | :--- | :--- |
-| **Baseline LSTM** | *[INSERT BASELINE MAE HERE, e.g., 0.045]* |
-| **Seq2Seq LSTM** | **[INSERT SEQ2SEQ MAE HERE, e.g., 0.021]** |
+| **Baseline LSTM** | **0.0100** |
+| **Seq2Seq LSTM** | **0.0287** |
 
 > *The Seq2Seq architecture demonstrated superior performance in capturing sudden market shifts compared to the baseline.*
 
